@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DetailInfoFragment"
+    android:id="@+id/main_profile">
+
+    <ProgressBar
+        android:id="@+id/progressBarDetail"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_user_detail_avatar"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@color/colorAccent"
+        android:layout_marginTop="18dp"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+    />
+
+    <TextView
+        android:id="@+id/tv_user_detail_full_name"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:gravity="center_horizontal"
+        android:text="@string/full_name"
+        android:textSize="22sp"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tv_user_detail_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:gravity="center_horizontal"
+        android:text="@string/username"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tv_user_detail_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:gravity="center_horizontal"
+        android:text="@string/company_name"
+        android:textSize="12sp"
+     android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tv_user_detail_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="246dp"
+        android:gravity="center_horizontal"
+        android:text="@string/location"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+    />
+
+</FrameLayout>
